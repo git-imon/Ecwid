@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.pt75 {
+  padding-top: 75px;
+}
+
+.pt100 {
+  padding-top: 100px;
+}
+
+.pt150 {
+  padding-top: 150px;
+}
+
+:root {
+  --dark-green: #06945b;
+  --light-green: #68e5a2;
+  --yellow: #fae053;
+  --orange: #f1b280;
+  --blue: #395be0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  padding: 2rem 4rem;
+}
+
+.container {
+  margin-left: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+
+  ul {
+    display: flex;
+
+    li,
+    li:not(:last-child) {
+      list-style: none;
+      padding-right: 16px;
+      a {
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.nav {
+  .logo svg {
+    width: 100px;
+    margin-right: 40px;
+    // display: flex;
+    // flex: 1;
+  }
+
+  .nav-left {
+    display: flex;
+    // justify-content: space-between;
+    // justify-content: center;
+    // flex: 1;
+  }
+
+  .nav-right {
+    display: flex;
+
+    a.btn-get-started, a.btn-req {
+      text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      padding: 10px 10px;
+      // background-color: #ccc;
+      border-radius: 5px;
+      color: #fff;
+    }
+    a.btn-get-started {
+      background-color: #ccc;
+      color: #111;
+      font-weight: 500;
+    }
+    a.btn-req {
+      background-color: #111;
+    }
+    // flex: 1;
+  }
+}
+
+section.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: "Volkhov", sans-serif;
+    font-size: 65px;
+    font-weight: normal;
+    margin-top: 150px;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    // font-size: calc(16px + 11 * (100vw - 600px) / 423) !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .hero-img-wrapper {
+    width: 100%;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  a.hero-btn {
+    width: 320px;
+    height: 100px;
+    background-color: var(--dark-green);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #111;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+} /*  hero */
+  
+
+
+ 
+/* ====== Section - Thumbnail-wrapper ====== */
+ 
+.thumbnail-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 200px;
+  place-items: center;
+
+  .card {
+
+    .img-thumbnail {
+      width: 80px;
+    }
+    p {
+      font-size: 0.7em;
+    }
+  }
+}
+
+ 
+/* ====== Section - Sell Anywhere ====== */
+
+section.sell__anywhere {
+  padding-top: 70px;
+
+  h4 {
+    font-family: "Volkhov", sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  
+  button.sell__anywhere__button {
+    background-color: #FFC599;
+    padding: 10px 60px;
+    border-radius: 40px;
+    border: 2px solid #111;
+  }
+}
+ 
+ 
+/* ====== Sell Anywhere ====== */
+
+.sell__anywhere {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // display: flex;
+    // flex: 1;
+  }
+
+  .sell__fi {
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .sell-fb h4, .sell-ins h4 {
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+} /*  sell__anywhere */
+   
